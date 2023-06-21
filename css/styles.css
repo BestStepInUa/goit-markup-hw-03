@@ -1,0 +1,410 @@
+:root {
+  /* Primary brand color  | IRIS #4D5AE5    */
+  --primaly-brand-color: #4d5ae5;
+  /* Pressed state color | OCEAN #404BBF   */
+  --pressed-state-color: #404bbf;
+  /* Overlays & shadows & headings color | NAVY BLUE #2E2F42 */
+  --dark-color: #2e2f42;
+  /* Valid fields & success messages color | GREEN #31D0AA */
+  --success-color: #31d0aa;
+  /* Body text color | SLATE #434455 */
+  --text-color: #434455;
+  /* Helper text & deemphasized subtle text color | LIGHT SLATE #8E8F99 */
+  --subtle-text-color: #8e8f99;
+  /* Accent & hairlines & subtle backgrounds color | CORNFLOWER #E7E9FC */
+  --accent-color: #e7e9fc;
+  /* Light mode backgrounds & dialogs/alerts color | CLOUD #F4F4FD */
+  --light-color: #f4f4fd;
+  /* Overlay color | NAVY BLUE MODAL #2E2F42 */
+  --modal-overlay-color: #2e2f42;
+  /* Hero image background color | GREY #2E2F42 */
+  --hero-background-color: #2e2f42;
+  /* Header & team & portfolio card background color | WHITE #FFFFFF */
+  --white-background-color: #ffffff;
+  /* Modal background color | DAIRY #FCFCFC */
+  --modal-background-color: #fcfcfc;
+  /* White text color | | WHITE #FFFFFF */
+  --white-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--white-background-color);
+  color: var(--text-color);
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+/* Reset end */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* End of Reset */
+
+/* Remove the underlining in the links */
+.link {
+  text-decoration: none;
+}
+
+/* Remove list markers */
+.list {
+  list-style-type: none;
+}
+
+/* Web Stugio logo CSS Styles */
+.logo {
+  color: var(--primaly-brand-color);
+  font-weight: 800;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-studio-part,
+.logo-studio-part-in-footer {
+  font-weight: 800;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-studio-part {
+  color: var(--dark-color);
+}
+
+.logo-studio-part-in-footer {
+  color: var(--light-color);
+}
+
+/* Header SCC Styles */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  margin-right: 76px;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navigation-menu-item {
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.navigation-menu-item:hover,
+.navigation-menu-item:focus {
+  color: var(--pressed-state-color);
+}
+
+.address-information {
+  font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.address-item {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.address-item:hover,
+.address-item:focus {
+  color: var(--pressed-state-color);
+}
+/* Footer SCC Styles */
+.footer-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--dark-color);
+}
+
+.footer-text {
+  max-width: 264px;
+  margin-top: 16px;
+  color: var(--light-color);
+  font-weight: 400;
+}
+
+/* Index page CSS Styles */
+/* Hero(Page title) section styles*/
+.page-title-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: var(--dark-color);
+  text-align: center;
+}
+
+.page-title {
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.order-button {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primaly-brand-color);
+  color: var(--white-text-color);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.order-button:is(:hover, :focus) {
+  background-color: var(--pressed-state-color);
+}
+
+/* Features section styles */
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  width: 264px;
+}
+
+.features-title {
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.features-text {
+  font-weight: 400;
+}
+
+/* What are we doing? section styles */
+.company-product-section {
+  padding-bottom: 120px;
+}
+
+.company-product-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-product-title {
+  margin-bottom: 72px;
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Our team section styles */
+.company-team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--light-color);
+}
+.company-team-title {
+  margin-bottom: 72px;
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.company-team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-name {
+  margin-bottom: 8px;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team-list-job-title {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.team-list {
+  background-color: var(--white-background-color);
+}
+
+.team-list img {
+  margin-bottom: 32px;
+}
+
+/* Portfolio CSS Styles */
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-filter-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-filter-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--light-color);
+  color: var(--primaly-brand-color);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-text-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-list-item {
+  border: 1px solid var(--accent-color);
+}
+
+.portfolio-img {
+  margin-bottom: 32px;
+}
+
+.portfolio-title {
+  margin-bottom: 8px;
+  padding-left: 16px;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-type {
+  padding-bottom: 32px;
+  padding-left: 16px;
+  color: var(--text-color);
+  font-weight: 400;
+}
