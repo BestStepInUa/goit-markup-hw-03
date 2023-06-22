@@ -98,6 +98,7 @@ img {
 }
 .header-nav {
   display: flex;
+  align-items: center;
 }
 .header .logo {
   margin-right: 76px;
@@ -234,7 +235,7 @@ img {
   display: flex;
   gap: var(--indent);
   justify-content: space-between;
-  --items: 5;
+  --items: 4;
 }
 .team-list-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
@@ -260,8 +261,6 @@ img {
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
-}
-.portfolio-title {
 }
 /* Portfolio filter styles */
 .porfolio-filter {
