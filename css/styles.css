@@ -94,7 +94,7 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .header-nav {
   display: flex;
@@ -273,7 +273,6 @@ img {
 }
 .portfolio-filter-list-item-btn {
   padding: 12px 24px;
-  border: 1px solid var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   background-color: var(--light-bg-cl);
