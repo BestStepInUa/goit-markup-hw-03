@@ -274,7 +274,7 @@ img {
 .portfolio-filter-list-item-btn {
   padding: 12px 24px;
   border: 1px solid var(--accent-color);
-  border: none;
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
   background-color: var(--light-bg-cl);
   color: var(--primary-brand-cl);
